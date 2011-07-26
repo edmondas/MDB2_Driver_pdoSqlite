@@ -934,7 +934,7 @@ class MDB2_Result_pdoSqlite extends MDB2_Result_Common
     			if (!is_numeric($key)) $return[$key] = $value;
     		}
     	}
-    	elseif ($filterType == MDB2_FETCHMODE_NUM){
+    	elseif ($filterType == MDB2_FETCHMODE_ORDERED){
     		foreach ($array as $key => &$value) {
     			if (is_numeric($key)) $return[$key] = $value;
     		}
